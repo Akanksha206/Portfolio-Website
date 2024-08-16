@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: linear-gradient(165deg, #024226, #070565, #00500d);
+  --brown:rgb(7, 124, 106);
+  --grey: gray;
+  --white: white;
+  --sky: #96c5f7;
+  --blue: rgb(67, 67, 234);
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 20px;
+  background-color: rgb(19, 19, 49);
+}
+
+nav .left {
+  font-size: 1.5rem;
+  color: rgb(171, 227, 60);
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+nav ul li a:hover{
+  color: var(--blue);
+}
+
+nav ul li a:focus,
+nav ul li a:active {
+  color: yellow;
+  font-size: 1.1rem;
+}
+
+  
+
+  
+  /* Main Content Styles */
+  main {
+    padding-bottom: 150px;
+  }
+  
+  .firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    padding-left: 100px;
+  }
+  
+  .firstSection > div {
+    flex: 1 1 45%;
+    margin: 20px;
+  }
+  
+  .leftSection {
+    font-size: 2.6rem;
+    /* margin-bottom: 20px; */
+  }
+  .leftSection .btn{
+    padding: 4px 10px;
+    background-color: #0d0f37;
+    color: var(--white);
+    border: 0.5px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+    /* margin-left: 60px; */
+  }
+  .leftSection .btn a{
+    text-decoration: none;
+    color: var(--white);
+  }
+  .leftSection .btn a:active{
+    color: rgb(113, 68, 14);
+  }
+  
+  .leftSection .blue {
+    color: var(--brown);
+    font-weight: bold;
+  }
+  
+  #element {
+    color: var(--brown);
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .rightSection img {
+    width: 50%;
+    max-width: 500px;
+    margin: 50px 100px;
+  }
+  
+  main hr {
+    border: 0;
+    background: rgb(8, 8, 139);
+    height: 1.2px;
+    margin: 50px 84px;
+  }
+  
+  .secondSection {
+    margin: auto;
+    max-width: 80vw;
+  }
+  
+  .grey {
+    color: var(--grey);
+  }
+  
+  .secondSection h1 {
+    font-size: 2rem;
+    /* margin: 20px 0; */
+    color:yellowgreen;
+  }
+  .secondSection .box {
+    background: var(--white);
+    width: 69vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  }
+  .secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: var(--white);
+    margin: 0 130px;
+  }
+  .secondSection .box {
+    background: var(--white);
+    width: 69vw;
+    margin: 56px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 2px;
+  }  
+  .image-top {
+    width: 35px;
+    position: relative;
+    top: -40px;
+    left: -15px;
+  }
+  
+  .vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    
+  }
+  
+  .vertical-desc {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    color: var(--grey);
+    font-size: 14px;
+  }
+
+  /* Footer Styles */
+
+footer {
+    background-color: rgb(19, 19, 49);
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 160px;
+}
+
+.footer {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.firstFooter h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.firstFooter .blue {
+    color: var(--blue); 
+}
+
+.secondFooter ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secondFooter ul li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+}
+.secondFooter ul li a img{
+    width: 23px;
+}
+
+.secondFooter ul li a:hover {
+    color:var(--white);
+    border-radius: 4px;
+}
+
+.footer-rights {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--grey);
+}
+
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px;
+  flex-wrap: wrap;
+  color: var(--white);
+}
+
+.about-content {
+  flex: 1 1 45%;
+  margin: 20px;
+}
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: rgb(120, 175, 10); 
+  font-style: italic; 
+  /* align-items: center;
+  justify-content: space-around;  */
+}
+
+.about-content div {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--sky);
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Service Page styling */
+
+body, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.service-main {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.service-main h4 {
+  color: #207fe5;
+  padding: 20px 0;
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.service-main h5 {
+  color: var(--sky);
+  padding: 10px 0;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.service-main p {
+  font-size: 13px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.service-main {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.service-main h4 {
+  color: var(--blue);
+  padding: 20px 0;
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.service-main h5 {
+  padding: 10px 0;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.service-main p {
+  font-size: 13px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Contact section styling */
+.contact-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 20px;
+  border-top: 1px solid --white;
+  margin-top: 40px;
+}
+.contact-section h4{
+  padding: 20px 0;
+}
+.contact-section p{
+  padding-bottom: 10px;
+}
+
+.social-media-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.social-media-list a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.social-media-list a:hover {
+  text-decoration: underline;
+}
