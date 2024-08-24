@@ -19,12 +19,11 @@
   --deep:rgb(12, 41, 74);
 }
 body {
-  color: white;
-  background: var(--background);
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 0;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  color: white;
 }
 
 body::before {
@@ -85,15 +84,14 @@ nav .logo img {
 }
 
 .wrapper {
-  background-color:linear-gradient(145deg,#745ac4,#ae98f0,#beaeee);
-  box-shadow: 0 0px 4px #b7dff1;
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 10px;
   max-width: 80%;
   margin: 60px auto;
   height: 150vh;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
   position: relative;
 }
 
@@ -197,7 +195,7 @@ main hr {
 
 
 .secondSection {
-  margin: auto;
+  margin-left: 15%;
   max-width: 80vw;
 
 }
